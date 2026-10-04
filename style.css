@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:wght@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+hr {
+    width: 100vw;
+    height: 2px;
+    bottom: 40px;
+    border: 0;
+    background-color: #2f2f2f;
+    position: absolute;
+}
+
+svg {
+    width: 26px;
+    transition: .2s;
+    fill: #e8e8e8;
+
+    &:hover {
+        fill: #fff;
+    }
+}
+
+header, footer {
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto auto;
+    text-align: center;
+    font-family: 'TikTok Sans', sans-serif;
+    background-color: rgba(18, 18, 18, 1);
+    color: #fff;
+    display: grid;
+
+    header {
+        position: relative;
+
+        svg {
+            padding: 10px;
+            position: absolute;
+        }
+    }
+
+    main {
+        padding: 0 26px;
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        p.t-control, p.t-accept {
+            width: 90%;
+            margin: 20px 5%;
+            color: rgba(255, 255, 255, .34);
+        }
+
+        p.t-control {
+            font-size: 15px;
+        }
+
+        p.t-accept {
+            font-size: 12px;
+        }
+
+        div {
+            .item {
+                width: 100%;
+                height: 46px;
+                left: 50%;
+                margin: 12px 0;
+                transform: translateX(-50%);
+                border: 1px solid rgba(37, 37, 37, 1);
+                border-radius: 8px;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(37, 37, 37, 1);
+                position: relative;
+                display: flex;
+
+                svg {
+                    width: 20px;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    position: absolute;
+                }
+
+                p {
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                &:hover {
+                    border-color: rgb(208, 209, 211);
+                    background-color: rgba(18, 18, 18, 1);
+                }
+            }
+        }
+    }
+
+    footer {
+        p {
+            padding: 10px 0;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    background: #000;
+    position: absolute;
+    display: flex;
+
+    video {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

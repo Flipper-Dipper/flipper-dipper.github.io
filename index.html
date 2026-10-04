@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="./assets/icon.jpg" rel="icon">
+    <title>TikTok</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapperLoad">
+        <video autoplay muted loop><source src="./assets/load.mp4" type="video/mp4"></video>
+    </div>
+</body>
+    <script>
+        function randomNumber(range) {
+            return Math.floor(Math.random() * range);
+        }
+
+        setTimeout(() => {
+            window.location.href = `./login.html`
+        }, randomNumber(5000))
+    </script>
+</html>
